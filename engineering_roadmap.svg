@@ -1,0 +1,309 @@
+<svg width="100%" viewBox="0 0 680 1020" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Engineering roadmap 2025</title>
+  <desc>Vertical engineering roadmap across Infrastructure, Platform, Product, and Security tracks spanning three phases.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <style>
+    text { font-family: ui-sans-serif, system-ui, sans-serif; }
+    .th { font-size: 14px; font-weight: 500; }
+    .ts { font-size: 12px; font-weight: 400; }
+    .card { cursor: pointer; }
+    .card:hover rect { opacity: 0.82; }
+  </style>
+
+  <!-- TITLE -->
+  <text class="th" x="340" y="36" text-anchor="middle" font-size="16" fill="#2C2C2A">Engineering roadmap 2025</text>
+
+  <!-- TRACK HEADERS -->
+  <rect x="40" y="56" width="130" height="34" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="th" x="105" y="73" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Infrastructure</text>
+
+  <rect x="183" y="56" width="130" height="34" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="th" x="248" y="73" text-anchor="middle" dominant-baseline="central" fill="#085041">Platform</text>
+
+  <rect x="326" y="56" width="130" height="34" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text class="th" x="391" y="73" text-anchor="middle" dominant-baseline="central" fill="#712B13">Product</text>
+
+  <rect x="469" y="56" width="130" height="34" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text class="th" x="534" y="73" text-anchor="middle" dominant-baseline="central" fill="#633806">Security</text>
+
+  <!-- PHASE 1 LABEL -->
+  <rect x="618" y="100" width="52" height="220" rx="8" fill="none" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="ts" x="644" y="222" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A" transform="rotate(-90,644,222)">Phase 1 — Foundation · Q1</text>
+
+  <!-- PHASE 1 Q1 CARDS -->
+  <a href="#cloud-migration" target="_blank">
+    <g class="card">
+      <rect x="40" y="104" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text class="th" x="105" y="126" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Cloud migration</text>
+      <text class="ts" x="105" y="146" text-anchor="middle" dominant-baseline="central" fill="#534AB7">Lift core services</text>
+      <text class="ts" x="105" y="162" text-anchor="middle" dominant-baseline="central" fill="#534AB7">to AWS / GCP</text>
+    </g>
+  </a>
+  <a href="#api-gateway" target="_blank">
+    <g class="card">
+      <rect x="183" y="104" width="130" height="72" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text class="th" x="248" y="126" text-anchor="middle" dominant-baseline="central" fill="#085041">API gateway</text>
+      <text class="ts" x="248" y="146" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Rate limiting,</text>
+      <text class="ts" x="248" y="162" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">auth middleware</text>
+    </g>
+  </a>
+  <a href="#design-system" target="_blank">
+    <g class="card">
+      <rect x="326" y="104" width="130" height="72" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+      <text class="th" x="391" y="126" text-anchor="middle" dominant-baseline="central" fill="#712B13">Design system</text>
+      <text class="ts" x="391" y="146" text-anchor="middle" dominant-baseline="central" fill="#993C1D">Component library</text>
+      <text class="ts" x="391" y="162" text-anchor="middle" dominant-baseline="central" fill="#993C1D">v1.0 shipped</text>
+    </g>
+  </a>
+  <a href="#security-audit" target="_blank">
+    <g class="card">
+      <rect x="469" y="104" width="130" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+      <text class="th" x="534" y="126" text-anchor="middle" dominant-baseline="central" fill="#633806">Security audit</text>
+      <text class="ts" x="534" y="146" text-anchor="middle" dominant-baseline="central" fill="#854F0B">Pentest + threat</text>
+      <text class="ts" x="534" y="162" text-anchor="middle" dominant-baseline="central" fill="#854F0B">model baseline</text>
+    </g>
+  </a>
+
+  <!-- CONNECTORS ROW 1 -->
+  <line x1="105" y1="176" x2="105" y2="208" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="248" y1="176" x2="248" y2="208" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="391" y1="176" x2="391" y2="208" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="534" y1="176" x2="534" y2="208" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 1 Q2 CARDS -->
+  <a href="#k8s-rollout" target="_blank">
+    <g class="card">
+      <rect x="40" y="208" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text class="th" x="105" y="230" text-anchor="middle" dominant-baseline="central" fill="#3C3489">K8s rollout</text>
+      <text class="ts" x="105" y="250" text-anchor="middle" dominant-baseline="central" fill="#534AB7">Containerise all</text>
+      <text class="ts" x="105" y="266" text-anchor="middle" dominant-baseline="central" fill="#534AB7">microservices</text>
+    </g>
+  </a>
+  <a href="#service-mesh" target="_blank">
+    <g class="card">
+      <rect x="183" y="208" width="130" height="72" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text class="th" x="248" y="230" text-anchor="middle" dominant-baseline="central" fill="#085041">Service mesh</text>
+      <text class="ts" x="248" y="250" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Istio mTLS,</text>
+      <text class="ts" x="248" y="266" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">observability</text>
+    </g>
+  </a>
+  <a href="#dashboard-mvp" target="_blank">
+    <g class="card">
+      <rect x="326" y="208" width="130" height="72" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+      <text class="th" x="391" y="230" text-anchor="middle" dominant-baseline="central" fill="#712B13">Dashboard MVP</text>
+      <text class="ts" x="391" y="250" text-anchor="middle" dominant-baseline="central" fill="#993C1D">Core analytics</text>
+      <text class="ts" x="391" y="266" text-anchor="middle" dominant-baseline="central" fill="#993C1D">+ user settings</text>
+    </g>
+  </a>
+  <a href="#sso-mfa" target="_blank">
+    <g class="card">
+      <rect x="469" y="208" width="130" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+      <text class="th" x="534" y="230" text-anchor="middle" dominant-baseline="central" fill="#633806">SSO + MFA</text>
+      <text class="ts" x="534" y="250" text-anchor="middle" dominant-baseline="central" fill="#854F0B">SAML / OIDC</text>
+      <text class="ts" x="534" y="266" text-anchor="middle" dominant-baseline="central" fill="#854F0B">org-wide rollout</text>
+    </g>
+  </a>
+
+  <!-- MILESTONE 1 -->
+  <rect x="124" y="298" width="370" height="22" rx="11" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text class="ts" x="309" y="309" text-anchor="middle" dominant-baseline="central" fill="#444441">★ Milestone: infrastructure baseline complete</text>
+
+  <!-- PHASE 2 LABEL -->
+  <rect x="618" y="336" width="52" height="220" rx="8" fill="none" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="ts" x="644" y="458" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A" transform="rotate(-90,644,458)">Phase 2 — Scale · Q3</text>
+
+  <!-- CONNECTORS TO PHASE 2 -->
+  <line x1="105" y1="320" x2="105" y2="340" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="248" y1="320" x2="248" y2="340" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="391" y1="320" x2="391" y2="340" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="534" y1="320" x2="534" y2="340" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 2 Q3 CARDS -->
+  <a href="#auto-scaling" target="_blank">
+    <g class="card">
+      <rect x="40" y="340" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text class="th" x="105" y="362" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Auto-scaling</text>
+      <text class="ts" x="105" y="382" text-anchor="middle" dominant-baseline="central" fill="#534AB7">HPA + cluster</text>
+      <text class="ts" x="105" y="398" text-anchor="middle" dominant-baseline="central" fill="#534AB7">autoscaler</text>
+    </g>
+  </a>
+  <a href="#data-pipeline" target="_blank">
+    <g class="card">
+      <rect x="183" y="340" width="130" height="72" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text class="th" x="248" y="362" text-anchor="middle" dominant-baseline="central" fill="#085041">Data pipeline</text>
+      <text class="ts" x="248" y="382" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Kafka + Flink</text>
+      <text class="ts" x="248" y="398" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">streaming layer</text>
+    </g>
+  </a>
+  <a href="#mobile-app" target="_blank">
+    <g class="card">
+      <rect x="326" y="340" width="130" height="72" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+      <text class="th" x="391" y="362" text-anchor="middle" dominant-baseline="central" fill="#712B13">Mobile app</text>
+      <text class="ts" x="391" y="382" text-anchor="middle" dominant-baseline="central" fill="#993C1D">iOS + Android</text>
+      <text class="ts" x="391" y="398" text-anchor="middle" dominant-baseline="central" fill="#993C1D">beta launch</text>
+    </g>
+  </a>
+  <a href="#vuln-scanning" target="_blank">
+    <g class="card">
+      <rect x="469" y="340" width="130" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+      <text class="th" x="534" y="362" text-anchor="middle" dominant-baseline="central" fill="#633806">Vuln scanning</text>
+      <text class="ts" x="534" y="382" text-anchor="middle" dominant-baseline="central" fill="#854F0B">Automated SAST</text>
+      <text class="ts" x="534" y="398" text-anchor="middle" dominant-baseline="central" fill="#854F0B">/ DAST in CI</text>
+    </g>
+  </a>
+
+  <!-- CONNECTORS ROW 3 -->
+  <line x1="105" y1="412" x2="105" y2="444" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="248" y1="412" x2="248" y2="444" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="391" y1="412" x2="391" y2="444" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="534" y1="412" x2="534" y2="444" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 2 Q4 CARDS -->
+  <a href="#multi-region-dr" target="_blank">
+    <g class="card">
+      <rect x="40" y="444" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text class="th" x="105" y="466" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Multi-region DR</text>
+      <text class="ts" x="105" y="486" text-anchor="middle" dominant-baseline="central" fill="#534AB7">Failover + RTO</text>
+      <text class="ts" x="105" y="502" text-anchor="middle" dominant-baseline="central" fill="#534AB7">&lt; 15 min target</text>
+    </g>
+  </a>
+  <a href="#dev-portal" target="_blank">
+    <g class="card">
+      <rect x="183" y="444" width="130" height="72" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text class="th" x="248" y="466" text-anchor="middle" dominant-baseline="central" fill="#085041">Dev portal</text>
+      <text class="ts" x="248" y="486" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Docs, sandbox,</text>
+      <text class="ts" x="248" y="502" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">API explorer</text>
+    </g>
+  </a>
+  <a href="#ai-features" target="_blank">
+    <g class="card">
+      <rect x="326" y="444" width="130" height="72" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+      <text class="th" x="391" y="466" text-anchor="middle" dominant-baseline="central" fill="#712B13">AI features</text>
+      <text class="ts" x="391" y="486" text-anchor="middle" dominant-baseline="central" fill="#993C1D">Smart search,</text>
+      <text class="ts" x="391" y="502" text-anchor="middle" dominant-baseline="central" fill="#993C1D">recommendations</text>
+    </g>
+  </a>
+  <a href="#soc2-prep" target="_blank">
+    <g class="card">
+      <rect x="469" y="444" width="130" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+      <text class="th" x="534" y="466" text-anchor="middle" dominant-baseline="central" fill="#633806">SOC 2 prep</text>
+      <text class="ts" x="534" y="486" text-anchor="middle" dominant-baseline="central" fill="#854F0B">Evidence collection</text>
+      <text class="ts" x="534" y="502" text-anchor="middle" dominant-baseline="central" fill="#854F0B">+ audit readiness</text>
+    </g>
+  </a>
+
+  <!-- MILESTONE 2 -->
+  <rect x="124" y="534" width="370" height="22" rx="11" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text class="ts" x="309" y="545" text-anchor="middle" dominant-baseline="central" fill="#444441">★ Milestone: platform GA + security certification</text>
+
+  <!-- PHASE 3 LABEL -->
+  <rect x="618" y="572" width="52" height="220" rx="8" fill="none" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="ts" x="644" y="694" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A" transform="rotate(-90,644,694)">Phase 3 — Optimise · Q5–Q6</text>
+
+  <!-- CONNECTORS TO PHASE 3 -->
+  <line x1="105" y1="556" x2="105" y2="576" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="248" y1="556" x2="248" y2="576" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="391" y1="556" x2="391" y2="576" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="534" y1="556" x2="534" y2="576" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 3 Q5 CARDS -->
+  <a href="#cost-optimise" target="_blank">
+    <g class="card">
+      <rect x="40" y="576" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text class="th" x="105" y="598" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Cost optimise</text>
+      <text class="ts" x="105" y="618" text-anchor="middle" dominant-baseline="central" fill="#534AB7">FinOps, spot</text>
+      <text class="ts" x="105" y="634" text-anchor="middle" dominant-baseline="central" fill="#534AB7">instances, savings</text>
+    </g>
+  </a>
+  <a href="#sdk-v2" target="_blank">
+    <g class="card">
+      <rect x="183" y="576" width="130" height="72" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text class="th" x="248" y="598" text-anchor="middle" dominant-baseline="central" fill="#085041">SDK v2</text>
+      <text class="ts" x="248" y="618" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Python, JS, Go</text>
+      <text class="ts" x="248" y="634" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">client libraries</text>
+    </g>
+  </a>
+  <a href="#self-serve" target="_blank">
+    <g class="card">
+      <rect x="326" y="576" width="130" height="72" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+      <text class="th" x="391" y="598" text-anchor="middle" dominant-baseline="central" fill="#712B13">Self-serve</text>
+      <text class="ts" x="391" y="618" text-anchor="middle" dominant-baseline="central" fill="#993C1D">Zero-touch</text>
+      <text class="ts" x="391" y="634" text-anchor="middle" dominant-baseline="central" fill="#993C1D">onboarding flow</text>
+    </g>
+  </a>
+  <a href="#zero-trust" target="_blank">
+    <g class="card">
+      <rect x="469" y="576" width="130" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+      <text class="th" x="534" y="598" text-anchor="middle" dominant-baseline="central" fill="#633806">Zero-trust</text>
+      <text class="ts" x="534" y="618" text-anchor="middle" dominant-baseline="central" fill="#854F0B">BeyondCorp</text>
+      <text class="ts" x="534" y="634" text-anchor="middle" dominant-baseline="central" fill="#854F0B">network model</text>
+    </g>
+  </a>
+
+  <!-- CONNECTORS ROW 5 -->
+  <line x1="105" y1="648" x2="105" y2="680" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="248" y1="648" x2="248" y2="680" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="391" y1="648" x2="391" y2="680" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="534" y1="648" x2="534" y2="680" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- PHASE 3 Q6 CARDS -->
+  <a href="#chaos-eng" target="_blank">
+    <g class="card">
+      <rect x="40" y="680" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text class="th" x="105" y="702" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Chaos eng.</text>
+      <text class="ts" x="105" y="722" text-anchor="middle" dominant-baseline="central" fill="#534AB7">GameDays,</text>
+      <text class="ts" x="105" y="738" text-anchor="middle" dominant-baseline="central" fill="#534AB7">fault injection</text>
+    </g>
+  </a>
+  <a href="#event-driven" target="_blank">
+    <g class="card">
+      <rect x="183" y="680" width="130" height="72" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text class="th" x="248" y="702" text-anchor="middle" dominant-baseline="central" fill="#085041">Event-driven</text>
+      <text class="ts" x="248" y="722" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Async refactor,</text>
+      <text class="ts" x="248" y="738" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">pub/sub patterns</text>
+    </g>
+  </a>
+  <a href="#i18n" target="_blank">
+    <g class="card">
+      <rect x="326" y="680" width="130" height="72" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+      <text class="th" x="391" y="702" text-anchor="middle" dominant-baseline="central" fill="#712B13">i18n + l10n</text>
+      <text class="ts" x="391" y="722" text-anchor="middle" dominant-baseline="central" fill="#993C1D">10 locale</text>
+      <text class="ts" x="391" y="738" text-anchor="middle" dominant-baseline="central" fill="#993C1D">support</text>
+    </g>
+  </a>
+  <a href="#gdpr-ccpa" target="_blank">
+    <g class="card">
+      <rect x="469" y="680" width="130" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+      <text class="th" x="534" y="702" text-anchor="middle" dominant-baseline="central" fill="#633806">GDPR / CCPA</text>
+      <text class="ts" x="534" y="722" text-anchor="middle" dominant-baseline="central" fill="#854F0B">Data residency</text>
+      <text class="ts" x="534" y="738" text-anchor="middle" dominant-baseline="central" fill="#854F0B">+ consent mgmt</text>
+    </g>
+  </a>
+
+  <!-- CONNECTORS TO FINAL MILESTONE -->
+  <line x1="105" y1="752" x2="105" y2="784" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="248" y1="752" x2="248" y2="784" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="391" y1="752" x2="391" y2="784" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="534" y1="752" x2="534" y2="784" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- FINAL MILESTONE -->
+  <rect x="40" y="784" width="559" height="40" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="th" x="319" y="804" text-anchor="middle" dominant-baseline="central" fill="#3C3489">★ Goal: production-grade, globally resilient platform</text>
+
+  <!-- LEGEND -->
+  <rect x="40" y="848" width="12" height="12" rx="3" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="ts" x="58" y="859" dominant-baseline="central" fill="#444441">Infrastructure</text>
+  <rect x="162" y="848" width="12" height="12" rx="3" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="180" y="859" dominant-baseline="central" fill="#444441">Platform</text>
+  <rect x="264" y="848" width="12" height="12" rx="3" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text class="ts" x="282" y="859" dominant-baseline="central" fill="#444441">Product</text>
+  <rect x="360" y="848" width="12" height="12" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text class="ts" x="378" y="859" dominant-baseline="central" fill="#444441">Security</text>
+  <text class="ts" x="474" y="859" dominant-baseline="central" fill="#444441">★ = milestone</text>
+</svg>
